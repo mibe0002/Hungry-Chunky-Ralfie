@@ -1,0 +1,495 @@
+/* påmindelse: grid med 3 kolonner & maw-width på 1200px*/
+
+/************** FONTS **************/
+@font-face {
+  font-family: "indie_flowerregular";
+  src: url("../fonts/IndieFlower/indieflower-regular-webfont.woff2") format("woff2"), url("../fonts/IndieFlower/indieflower-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "playpen_sansregular";
+  src: url("../fonts/PlaypenSans/playpensans-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/PlaypenSans/playpensans-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/************** COLORS ***************/
+/* Color Theme Swatches in Hex */
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-1-hex {
+  color: #f2bde9;
+}
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-2-hex {
+  color: #58592e;
+}
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-3-hex {
+  color: #a69e2d;
+}
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-4-hex {
+  color: #f28f6b;
+}
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-5-hex {
+  color: #f2f2f2;
+}
+
+/* Color Theme Swatches in RGBA */
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-1-rgba {
+  color: rgba(242, 189, 233, 1);
+}
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-2-rgba {
+  color: rgba(88, 89, 46, 1);
+}
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-3-rgba {
+  color: rgba(166, 158, 45, 1);
+}
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-4-rgba {
+  color: rgba(242, 143, 107, 1);
+}
+.color-theme_Moodboards-based-on-Lisa-Vertudaches-5-rgba {
+  color: rgba(242, 242, 242, 1);
+}
+
+/************* !!!GENEREL STYLES!!! **************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  position: relative;
+  top: 0;
+  padding: 1rem 2rem;
+  box-shadow: 0px 12px 28px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2bde9;
+  font-family: "indie_flowerregular";
+}
+
+.logo {
+  max-width: 15cqw;
+  z-index: 2;
+  border-radius: 100%;
+  margin: 30px;
+  width: auto;
+  height: auto;
+}
+
+/************* Burger menu (active) *************/
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 64%;
+  width: 35%;
+  background-color: #f2bde9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  border-radius: 9px;
+  border: 2px solid #f28f6b;
+}
+
+/* main */
+body {
+  background-color: #f2f2f2;
+  /* text-align: center; */
+}
+
+h1 {
+  font-family: "indie_flowerregular";
+  margin: 50px auto;
+  font-size: 5cqw;
+  text-align: center;
+}
+
+p {
+  font-family: "playpen_sansregular";
+  font-size: 1.5cqw;
+  max-width: 45ch;
+  margin: 50px auto;
+}
+
+h2 {
+  font-family: "playpen_sansregular";
+  font-size: 4cqw;
+  margin: 30px 30px 20px 30px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "playpen_sansregular";
+  font-size: 2cqw;
+  margin: 0 30px 50px 30px;
+  text-align: center;
+}
+
+/* FORSIDE */
+#img1 {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  object-fit: cover;
+  width: 50%;
+  height: 100%;
+}
+
+#spillet {
+  position: relative;
+  width: fit-content;
+  margin: 30px auto;
+  width: 50%;
+  height: 100%;
+}
+
+/* chatgpt */
+#knap1 {
+  position: absolute;
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center the button */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 10px 20px; /* Adjust padding */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text horizontally */
+  cursor: pointer;
+}
+
+#knap1 p {
+  margin: 0;
+}
+
+#ideer {
+  position: relative;
+  width: fit-content;
+  margin: 30px auto;
+  width: 50%;
+  height: 100%;
+}
+
+/* chatgpt */
+#knap2 {
+  position: absolute;
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center the button */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 10px 20px; /* Adjust padding */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text horizontally */
+  cursor: pointer;
+}
+
+#knap2 p {
+  margin: 0;
+}
+
+#assets {
+  position: relative;
+  width: fit-content;
+  margin: 30px auto;
+  width: 50%;
+  height: 100%;
+}
+
+/* chatgpt */
+#knap3 {
+  position: absolute;
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center the button */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 10px 20px; /* Adjust padding */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text horizontally */
+  cursor: pointer;
+}
+
+#knap3 p {
+  margin: 0;
+}
+
+#teknik {
+  position: relative;
+  width: fit-content;
+  margin: 30px auto;
+  width: 50%;
+  height: 100%;
+}
+
+/* chatgpt */
+#knap4 {
+  position: absolute;
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center the button */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 10px 20px; /* Adjust padding */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text horizontally */
+  cursor: pointer;
+}
+
+#knap4 p {
+  margin: 0;
+}
+
+#skema {
+  margin: 30px;
+  text-align: center;
+}
+
+.survey_link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f2bde9;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.survey_link:hover {
+  transform: scale(1.1);
+}
+
+/* grafik */
+#gridpic {
+  display: flex;
+  justify-content: space-between;
+}
+
+#a,
+#b,
+#c,
+#d,
+#e {
+  gap: 10px;
+  padding: 10px;
+}
+
+/* teknik */
+#aktivitetsdiagram {
+  margin-bottom: 30px;
+}
+
+#imgak {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  object-fit: cover;
+  width: 50%;
+  height: 100%;
+}
+
+#imgsm {
+  margin: 50px;
+}
+
+/************* Footer *************/
+footer {
+  padding: 30px;
+  font-family: "playpen_sansregular";
+  text-align: center;
+}
+
+/************* !!!Mobile styles!!! **************/
+@media (max-width: 800px) {
+  .menu {
+    display: none; /* Fjerne den store menu på skærme 800px og under. */
+  }
+
+  .burger_menu {
+    display: block;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .menu.active {
+    display: block; /* viser menuen når burger menu aktiveres. */
+    z-index: 3;
+  }
+
+  header {
+    height: 130px;
+  }
+
+  /************** Burger bars og andre menu komponenter ***************/
+  .bar {
+    background-color: #f2f2f2;
+    height: 3px;
+    width: 25px;
+    margin: 5px auto;
+    transition: 0.4s;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    z-index: 999;
+  }
+
+  .menu li {
+    list-style: none;
+    margin: 24px 0;
+    z-index: 999;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .menu a:hover {
+    color: #f28f6b;
+    border-radius: 5px;
+    padding: 9px;
+    z-index: 999;
+  }
+}
+
+/************** !!!Desktop styles!!! ***************/
+@media (min-width: 800px) {
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    z-index: 3;
+    border-radius: 5px;
+  }
+
+  header {
+    height: 250px;
+  }
+
+  /************** Burger menu vha. Chatgpt**************/
+  .burger_menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+
+  .menu a:hover {
+    color: #f28f6b;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  #grid {
+    display: flex;
+    /* Chatgpt */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  #spillet,
+  #ideer,
+  #assets,
+  #teknik {
+    flex: 0 0 calc(50% - 10px);
+    /* chatgpt */
+    background-color: #f28f6b;
+    padding: 10px;
+    margin: 1px;
+  }
+
+  #gridgrafik {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  #ide_udvikling,
+  #inspiration,
+  #papir_prototype {
+    width: 33%;
+    gap: 10px;
+    background-color: #f2bde9;
+    padding: 10px;
+    border: 1px solid #58592e;
+  }
+
+  /* ASSETS */
+  #grida,
+  #gridb,
+  #gridc,
+  #gridd {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  .baggrunde {
+    width: calc(50% - 10px);
+    position: relative;
+  }
+
+  .andet,
+  .ui,
+  .lyde {
+    width: calc(20% - 10px);
+    position: relative;
+  }
+
+  .lyde {
+    width: calc(50% - 10px);
+    position: relative;
+  }
+
+  .baggrunde img,
+  .andet img,
+  .ui img,
+  .lyde audio {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(88, 89, 46, 0.5);
+    color: #f2f2f2;
+    padding: 1px;
+  }
+
+  .caption2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(88, 89, 46, 0.5);
+    color: #f2f2f2;
+    padding: 1px;
+  }
+}

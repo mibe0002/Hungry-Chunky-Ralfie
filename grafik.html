@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <!-- stylesheet og js-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="script" href="js/script.js">
+
+    <title>Min designproces</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="assets/spil/logo.svg" alt="game logo"></a></div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="spil.html">Hungry-Chunky Ralfie</a></li>
+                <li><a href="grafik.html">Designproces</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+            </ul>
+
+            <div class="burger_menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Min designproces
+        </h1>
+
+        <div id="gridgrafik">
+            <div id="ide_udvikling">
+                <h2>Ideudvikling</h2>
+                <p>
+                    Jeg valgte at lave et katte-spil, siden jeg i sidste emne (UX/UI) lavede en katte-hjemmeside.
+                    Så tænkte jeg, hvorfor ikke fortsætte på den samme form for tema: katten.
+                    Navnet på spillet: Hungry-Chunky Ralfie, kommer fra ideen om en "chunky" kat.
+                    Samt' gav det en nem idé til mit spil koncept, hvor man skal fodre katten med mad.
+
+                    Som sagt, handler spillet om;
+                    at man skal fodre katten, Ralfie.
+                    Den er meget sulten og har brug for mad så hurtigt som muligt.
+                    Ellers bliver den hangry, for den gider ikke at vente længe.
+                    Den skal have sin yndlingsret: tun på dåse.
+                    Men man skal passe på! Ens madrester (kødben) er iblandt.
+                </p>
+
+                <img src="assets/grafik/ideer.jpg" alt="ideer">
+            </div>
+
+            <div id="inspiration">
+                <h2>Inspiration</h2>
+                <p>Jeg fik inspiration fra min egen hjemmmeside og Lisa Vertudaches illustrationer.
+                    Her er f.eks. mit moodboard, hvilket er også mit "stil-udgangspunkt".
+                </p>
+                <img src="assets/grafik/moodboard_LV.png" alt="moodboard_LV">
+
+                <p>Fra mit moodboard, fik jeg også lavet min farvepalet.
+                    Der arbejdes derfor med den simple men stadig udtryksfulde tegnestil.
+                    Samt’ med lyse farverige palet og "baby bias"-ansigter.
+                </p>
+                <img src="assets/grafik/moodboard_colors.jpeg" alt="moodboard_colors">
+            </div>
+
+            <div id="papir_prototype">
+                <h2>Papirs-prototyper/
+                    skitser</h2>
+                <p> Her er mine skitser/prototyper til mit spil.
+                </p>
+
+                <div id="gridpic"></div>
+                <div id="a"><img src="assets/grafik/hcr_startscreen.jpg" alt="hcr_startscreen"></div>
+                <div id="b"><img src="assets/grafik/spilletmedstil.jpg" alt="spilletmedstil"></div>
+                <div id="c"><img src="assets/grafik/spilletigangsat.jpg" alt="spilletigangsat"></div>
+                <div id="d"><img src="assets/grafik/tabtskærm.jpg" alt="tabtskærm"></div>
+                <div id="e"> <img src="assets/grafik/vundetskærm.jpg" alt="vundetskærm"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>Lavet af Miv Anna</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerMenu = document.querySelector('.burger_menu');
+            const menu = document.querySelector('.menu');
+
+            burgerMenu.addEventListener('click', function () {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- Dokumentation af din designproces: Ideudvikling, inspiration, stil-udgangspunkt, papirprototype, skitser, screendumps, mm.
+ -->

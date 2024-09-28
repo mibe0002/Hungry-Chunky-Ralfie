@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <!-- stylesheet og js-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="script" href="js/menu_script.js">
+
+    <title>Forside</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="assets/spil/logo.svg" alt="game logo"></a></div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="spil.html">Hungry-Chunky Ralfie</a></li>
+                <li><a href="grafik.html">Designproces</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+            </ul>
+
+            <div class="burger_menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Hungry-Chunky Ralfie
+        </h1>
+
+        <div id="img1"><img src="assets/forside/startskærm.png" alt="startskærm til spillet Hungry-Chunky Ralfie"></div>
+
+
+        <p>Velkommen til mit spil: Hungry-Chunky Ralfie.
+            Her på siden får du et overblik af, hvad jeg har lavet i løbet af animationsforløbet, og hvordan mit
+            spil er blevet til.
+            Tak på forhånd og nyd tegningerne af katten, Ralfie.
+        </p>
+
+        <div id="grid">
+            <div id="spillet">
+                <img src="assets/forside/spillet.png" alt="spillet">
+                <a href="spil.html" id="knap1">
+                    <p>Prøv spillet!</p>
+                </a>
+            </div>
+
+            <div id="ideer">
+                <img src="assets/forside/ideer.jpg" alt="ideer">
+                <a href="grafik.html" id="knap2">
+                    <p>Kom og se mine grafikker, og hvordan jeg skabte Ralfie.</p>
+                </a>
+            </div>
+
+            <div id="assets">
+                <img src="assets/forside/assets.png" alt="assets">
+                <a href="assets.html" id="knap3">
+                    <p>Kom og se mine assets, der samlet bliver til et helt spil.</p>
+                </a>
+            </div>
+
+            <div id="teknik">
+                <img src="assets/forside/teknik.png" alt="teknik">
+                <a href="teknik.html" id="knap4">
+                    <p>Så bliver det teknisk.</p>
+                </a>
+            </div>
+        </div>
+
+        <div id="skema">
+            <a href="https://forms.gle/RsDwYfBHCpxEVwR7A" class="survey_link">Svar venligst på mit spørgeskema ♡</a>
+        </div>
+
+    </main>
+
+    <footer>Lavet af Miv Anna</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerMenu = document.querySelector('.burger_menu');
+            const menu = document.querySelector('.menu');
+
+            burgerMenu.addEventListener('click', function () {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

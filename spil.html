@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <!-- Indie Flower -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Playpen Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/spillet.css">
+
+    <title>Hungry-Chunky Ralfie</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="assets/spil/logo.svg" alt="game logo"></a></div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="spil.html">Hungry-Chunky Ralfie</a></li>
+                <li><a href="grafik.html">Designproces</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+            </ul>
+
+            <div class="burger_menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="screen">
+            <div id="game">
+                <div id="game_background"></div>
+                <div id="game_elements">
+                    <div id="hcr_container">
+                        <div id="ralfie"></div>
+                    </div>
+
+                    <div id="tun_container1">
+                        <div id="tun1"></div>
+                    </div>
+
+                    <div id="tun_container2">
+                        <div id="tun2"></div>
+                    </div>
+
+                    <div id="madrest_container1">
+                        <div id="madrest1"></div>
+                    </div>
+
+                    <div id="madrest_container2">
+                        <div id="madrest2"></div>
+                    </div>
+
+                </div>
+                <div id="game_foreground"></div>
+
+                <div id="game_ui">
+                    <div id="points">Point: 0</div>
+                    <div id="lives">Lives: 3</div>
+                    <div id="time">
+                        <div id="time_container">
+                            <div id="time_ramme"></div>
+                            <div id="time_fyld"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="start">
+                <div id="start_knap"></div>
+                <div id="game_logo"></div>
+                <div id="instruction"> </div>
+            </div>
+
+            <div id="game_over">
+                <div id="angry_effect"></div>
+                <div id="game_overpoint"></div>
+                <div id="game_overlife"></div>
+                <div id="game_overtxt"></div>
+                <div id="genstart1"></div>
+                <div id="home1"></div>
+            </div>
+
+            <div id="level_complete">
+                <div id="happy_effect"></div>
+                <div id="lvlc_point"></div>
+                <div id="lvlc_life"></div>
+                <div id="lvlc_txt"></div>
+                <div id="genstart2"></div>
+                <div id="home2"></div>
+            </div>
+        </div>
+
+        <div id="sounds">
+            <audio src="sounds/meow_01.mp3" id="meow"></audio>
+            <audio src="sounds/sur_meow_01.mp3" id="sur_meow"></audio>
+        </div>
+    </main>
+
+    <footer>Lavet af Miv Anna</footer>
+
+    <!-- js -->
+    <script src="js/menu_script.js"></script>
+    <script src="js/spillet.js"></script>
+
+</body>
+
+</html>
